@@ -128,39 +128,6 @@ Then two deterministic (no-AI) steps run:
   writes `local.settings.json` + `connections.json` + `SETUP.md`.
 
 
-## 🚀 Getting started
-1. Clone the repo
-
-```bash
-git clone https://github.com/m4rioSvk/LogicApps_Factory.git
-cd LogicApps_Factory
-```
-
-2. Install requirements
-
-```bash
-python -m pip install -r requirements.txt
-# or: pip install claude-agent-sdk
-```
-
-3. Prepare a flow file under `flows/` (example below) and run
-
-```bash
-python main.py flows/example_flow.json
-```
-
-Example minimal flow (flows/example_flow.json)
-
-```json
-{
-  "name": "invoice-automation",
-  "target_project": "C:\\path\\to\\LogicApp_Project",
-  "workflow_folder": "InvoiceProcessor",
-  "requirement": "When an invoice arrives by email, extract invoice data, store PDF in blob, push metadata to ERP, and notify finance."
-}
-```
-
-
 ## Files & structure
 LogicAppsAgents (this repo) is the generator. Its output belongs in a separate Logic App Standard project.
 
